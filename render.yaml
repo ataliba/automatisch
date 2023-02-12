@@ -94,6 +94,7 @@ services:
     name: automatisch-redis
     ipAllowList: [] # allow only internal connections
     maxmemoryPolicy: noeviction
+    plan: free
 databases:
   - name: automatisch-database
     databaseName: automatisch
