@@ -52,7 +52,6 @@ services:
     dockerContext: ./docker
     repo: https://github.com/automatisch/automatisch
     autoDeploy: false
-    plan: free
     envVars:
       - key: WORKER
         value: true
