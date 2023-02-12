@@ -6,6 +6,7 @@ services:
     dockerContext: ./docker
     repo: https://github.com/automatisch/automatisch
     autoDeploy: false
+    plan: free
     envVars:
       - key: HOST
         fromService:
@@ -50,6 +51,7 @@ services:
     dockerContext: ./docker
     repo: https://github.com/automatisch/automatisch
     autoDeploy: false
+    plan: free
     envVars:
       - key: WORKER
         value: true
@@ -93,6 +95,7 @@ services:
     name: automatisch-redis
     ipAllowList: [] # allow only internal connections
     maxmemoryPolicy: noeviction
+    plan: free
 databases:
   - name: automatisch-database
     databaseName: automatisch
